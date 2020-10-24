@@ -1,8 +1,552 @@
+<!DOCTYPE html>
 <html>
-    <title>
-        My Pro Gamez
-    </title>
-    <body>
-        <p>Welcome to My ProGamez by Abhiram Gummalla</p>
-    </body>
-</html>
+<head>    
+    <link rel="icon" href="./images/gamez.png" type="image/gif" sizes="16x16">
+    <title>Comic Reading Web Page</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .pad {
+            padding: 25px;
+        }
+        .header {
+            background-color: lightblue;
+            color: black;
+            height: 70px;
+            font-size: 36pt;
+            text-align: center;
+        }
+        .welcome {
+            background-image: url(./images/4574521-stripes-horizontal-1-inch-2-54cm-dark-green-00813c-light-green-3ad42d-by-elsielevelsup.jpg);
+            color: white;
+            font-size: 16pt;
+            text-align: center;
+            height: 30px;
+            margin: 0px;
+        }
+        .main-text {
+            width: 96%;
+            color: white;
+            text-align: center;
+
+            background-image: url(./images/908932.jpg);
+            background-size: cover;
+            
+        }
+        
+      </style>
+      </head>
+       <body>
+           <div class="header pad">
+            Comic Reading Web Page            
+           </div>
+           <div>
+               <p class="welcome">
+                   By ProGamez
+               </p>
+           </div>
+           <div class="main-text pad">
+               <p>Hello I am ProGamez, a youtuber in youtube and welcome to my website. Here I will post comics and stories about my life, fantasy, descriptive stories and more. Good luck on reading theese!</p>
+               <p>How to use: Click on a comic to read and the comic will pop up as a big comic</p>     
+            </div>
+           <div class="main-text pad">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           
+           <style>
+           body {font-family: Arial, Helvetica, sans-serif;}
+
+           #mylmg {
+               border-radius: 5px;
+               cursor: pointer;
+               transition: 0.3s;
+           }
+           
+           #mylmg:hover{opacity: 0.7;}
+
+           /* The Modal(background) */
+           .modal {
+               display: none; /* Hidden by defult */
+               position: fixed; /* Stay in place */
+               z-index: 1; /* Sit on top */
+               padding-top: 100px; /* Location of the box */
+               left: 0;
+               top: 0;
+               width: 100%; /* Full Width */
+               height: 100%; /* Full Height */
+               overflow: auto; /* Enable Scroll if needed */
+               background-color: rgb(0,0,0); /* Fallback Color */
+               background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+           }
+
+           /* Modal Content (image) */
+           .modal-content {
+               margin: auto;
+               display: block;
+               width: 80%;
+               max-width: 700px;
+           }
+
+           /* Caption of modal image */
+           #caption {
+               margin: auto;
+               display: block;
+               width: 80%;
+               max-width: 700px;
+               text-align: center;
+               color: #ccc;
+               padding: 10px 0;
+               height: 150px;
+           }
+
+           /* Add animation */
+           .modal-content, #caption {
+               -webkit-animation-name: zoom;
+               -webkit-animation-duration: 0.6s;
+               animation-name: zoom;
+               animation-duration: 0.6s;
+           }
+
+           @-webkit-keyframes zoom {
+               from {-webkit-transform:scale(0)}
+               to {-webkit-transform:scale(1)}
+           }
+
+           @keyframes zoom {
+               from {transform: scale(0)}
+               to {transform: scale(1)}
+           }
+
+           /* The close button */
+           .close {
+               position: absolute;
+               top: 15px;
+               right: 35px;
+               color: #f1f1f1;
+               font-size: 40px;
+               font-weight: bold;
+               transition: 0.3s;
+           }
+
+           .close:hover,
+           .close:focus {
+               color: #bbb;
+               text-decoration: none;
+               cursor: pointer;
+           }
+
+           /* 100% Image Width on smaller screens */
+           @media only screen and (max-width: 700px){
+               .modal-content {
+                   width: 100%;
+               }
+           }
+           </style>
+           
+           <img id="myImg" src=".\images\Comic1.JPEG" alt="Cregis the unknown" style="width:100%;max-width:300px">
+
+           <!-- The modal -->
+           <div id="myModal" class="modal">
+               <span class="close">&times;</span>
+               <img class="modal-content" id="img01">
+               <div id="caption"></div>
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use is "alt"  text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+        </div>
+        <div class="main-text pad">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+ 
+            #mylmg1 {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            
+            #mylmg1:hover{opacity: 0.7;}
+ 
+            /* The Modal(background) */
+            .modal1 {
+                display: none; /* Hidden by defult */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full Width */
+                height: 100%; /* Full Height */
+                overflow: auto; /* Enable Scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback Color */
+                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+            }
+ 
+            /* Modal Content (image) */
+            .modal-content1 {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+ 
+            /* Caption of modal image */
+            #caption1 {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+ 
+            /* Add animation */
+            .modal-content1, #caption1 {
+                -webkit-animation-name: zoom;
+                -webkit-animation-duration: 0.6s;
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+ 
+            @-webkit-keyframes1 zoom {
+                from {-webkit-transform:scale(0)}
+                to {-webkit-transform:scale(1)}
+            }
+ 
+            @keyframes1 zoom {
+                from {transform: scale(0)}
+                to {transform: scale(1)}
+            }
+ 
+            /* The close button */
+            .close1 {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+ 
+            .close1:hover,
+            .close1:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+ 
+            /* 100% Image Width on smaller screens */
+            @media only screen and (max-width: 700px){
+                .modal-content1 {
+                    width: 100%;
+                }
+            }
+            </style>
+            
+            <img id="myImg1" src=".\images\Comic2.JPEG" alt="Greg the talking computer" style="width:100%;max-width:300px">
+ 
+            <!-- The modal -->
+            <div id="myModal1" class="modal1">
+                <span class="close1">&times;</span>
+                <img class="modal-content1" id="img02">
+                <div id="caption1"></div>
+             </div>
+             
+             <script>
+             // Get the modal
+             var modal = document.getElementById("myModal1");
+ 
+             // Get the image and insert it inside the modal - use is "alt"  text as a caption
+             var img = document.getElementById("myImg1");
+             var modalImg = document.getElementById("img02");
+             var captionText = document.getElementById("caption1");
+             img.onclick = function(){
+                 modal.style.display = "block";
+                 modalImg.src = this.src;
+                 captionText.innerHTML = this.alt;
+             }
+             
+             // Get the <span> element that closes the modal
+             var span = document.getElementsByClassName("close1")[0];
+ 
+             // When the user clicks on <span> (x), close the modal
+             span.onclick = function() {
+                 modal.style.display = "none";
+             }
+         </script>
+         </div>
+         <div class="main-text pad">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           
+           <style>
+           body {font-family: Arial, Helvetica, sans-serif;}
+
+           #mylmg2 {
+               border-radius: 5px;
+               cursor: pointer;
+               transition: 0.3s;
+           }
+           
+           #mylmg2:hover{opacity: 0.7;}
+
+           /* The Modal(background) */
+           .modal2 {
+               display: none; /* Hidden by defult */
+               position: fixed; /* Stay in place */
+               z-index: 1; /* Sit on top */
+               padding-top: 100px; /* Location of the box */
+               left: 0;
+               top: 0;
+               width: 100%; /* Full Width */
+               height: 100%; /* Full Height */
+               overflow: auto; /* Enable Scroll if needed */
+               background-color: rgb(0,0,0); /* Fallback Color */
+               background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+           }
+
+           /* Modal Content (image) */
+           .modal-content2 {
+               margin: auto;
+               display: block;
+               width: 80%;
+               max-width: 700px;
+           }
+
+           /* Caption of modal image */
+           #caption2 {
+               margin: auto;
+               display: block;
+               width: 80%;
+               max-width: 700px;
+               text-align: center;
+               color: #ccc;
+               padding: 10px 0;
+               height: 150px;
+           }
+
+           /* Add animation */
+           .modal-content2, #caption2 {
+               -webkit-animation-name: zoom;
+               -webkit-animation-duration: 0.6s;
+               animation-name: zoom;
+               animation-duration: 0.6s;
+           }
+
+           @-webkit-keyframes2 zoom {
+               from {-webkit-transform:scale(0)}
+               to {-webkit-transform:scale(1)}
+           }
+
+           @keyframes2 zoom {
+               from {transform: scale(0)}
+               to {transform: scale(1)}
+           }
+
+           /* The close button */
+           .close2 {
+               position: absolute;
+               top: 15px;
+               right: 35px;
+               color: #f1f1f1;
+               font-size: 40px;
+               font-weight: bold;
+               transition: 0.3s;
+           }
+
+           .close2:hover,
+           .close2:focus {
+               color: #bbb;
+               text-decoration: none;
+               cursor: pointer;
+           }
+
+           /* 100% Image Width on smaller screens */
+           @media only screen and (max-width: 700px){
+               .modal-content2 {
+                   width: 100%;
+               }
+           }
+           </style>
+           
+           <img id="myImg2" src=".\images\Comic3.JPEG" alt="Pencil Points and Hammers!" style="width:100%;max-width:300px">
+
+           <!-- The modal -->
+           <div id="myModal2" class="modal2">
+               <span class="close2">&times;</span>
+               <img class="modal-content2" id="img03">
+               <div id="caption2"></div>
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById("myModal2");
+
+            // Get the image and insert it inside the modal - use is "alt"  text as a caption
+            var img = document.getElementById("myImg2");
+            var modalImg = document.getElementById("img03");
+            var captionText = document.getElementById("caption2");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close2")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+        </div>
+        <div class="main-text pad">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+ 
+            #mylmg3 {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            
+            #mylmg3:hover{opacity: 0.7;}
+ 
+            /* The Modal(background) */
+            .modal3 {
+                display: none; /* Hidden by defult */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full Width */
+                height: 100%; /* Full Height */
+                overflow: auto; /* Enable Scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback Color */
+                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+            }
+ 
+            /* Modal Content (image) */
+            .modal-content3 {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+ 
+            /* Caption of modal image */
+            #caption3 {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+ 
+            /* Add animation */
+            .modal-content3, #caption3 {
+                -webkit-animation-name: zoom;
+                -webkit-animation-duration: 0.6s;
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+ 
+            @-webkit-keyframes3 zoom {
+                from {-webkit-transform:scale(0)}
+                to {-webkit-transform:scale(1)}
+            }
+ 
+            @keyframes3 zoom {
+                from {transform: scale(0)}
+                to {transform: scale(1)}
+            }
+ 
+            /* The close button */
+            .close3 {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+ 
+            .close3:hover,
+            .close3:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+ 
+            /* 100% Image Width on smaller screens */
+            @media only screen and (max-width: 700px){
+                .modal-content3 {
+                    width: 100%;
+                }
+            }
+            </style>
+            
+            <img id="myImg3" src=".\images\Comic4.JPEG" alt="The Magical Empty Frige!" style="width:100%;max-width:300px">
+ 
+            <!-- The modal -->
+            <div id="myModal3" class="modal3">
+                <span class="close3">&times;</span>
+                <img class="modal-content3" id="img04">
+                <div id="caption3"></div>
+             </div>
+             
+             <script>
+             // Get the modal
+             var modal = document.getElementById("myModal3");
+ 
+             // Get the image and insert it inside the modal - use is "alt"  text as a caption
+             var img = document.getElementById("myImg3");
+             var modalImg = document.getElementById("img04");
+             var captionText = document.getElementById("caption3");
+             img.onclick = function(){
+                 modal.style.display = "block";
+                 modalImg.src = this.src;
+                 captionText.innerHTML = this.alt;
+             }
+             
+             // Get the <span> element that closes the modal
+             var span = document.getElementsByClassName("close3")[0];
+ 
+             // When the user clicks on <span> (x), close the modal
+             span.onclick = function() {
+                 modal.style.display = "none";
+             }
+         </script>
+         </div>       
